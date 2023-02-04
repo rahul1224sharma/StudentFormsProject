@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>feedback form</title>
+</head>
+<body>
+<div align="center">
+    <h1>Student feedback form</h1>
+    <hr/>
+    {% if sentdata %}
+    <p>Thanks for your valuable feedback</p>
+    <p>submit another one</p>
+    {% endif %}
+    <form class="" action="" method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="submit">
+
+    </form>
+</div>
+</body>
+</html>

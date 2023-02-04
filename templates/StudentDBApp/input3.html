@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div align="center">
+        <h1> Student marks</h1>
+        <hr/>
+        <form method="post">
+            {{ form1.as_p }}
+            {% csrf_token %}
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>

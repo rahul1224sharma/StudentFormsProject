@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student thankyou</title>
+</head>
+<body bgcolor="#ffffe0">
+    {% if sentdata %}
+    <h1>thanks for providing Information...!!</h1>
+<hr/>
+<h2>Enter next student marks</h2>
+{% endif %}
+    <form method="post">
+        {{ form1.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="submit">
+    </form>
+    <br/>
+    <a href="/st/">goo back</a>
+</body>
+</html>

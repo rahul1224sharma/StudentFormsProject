@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login success</title>
+</head>
+<body bgcolor="yellow" style="color: red">
+{% if sentdata %}
+    <h1>Thanks for login....</h1>
+    <hr/>
+<h2>welcome {{ username }}</h2>
+<hr/>
+<h3>Here is your records</h3>
+<p>...Rollno...</p>
+<p>...Name....</p>
+<p>...marks....</p>
+{% else %}
+</body>
+    <a href="/login/">Go to login-page</a>
+{% endif %}
+</html>
